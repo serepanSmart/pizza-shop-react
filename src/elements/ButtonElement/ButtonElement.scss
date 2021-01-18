@@ -1,0 +1,36 @@
+@import './../../scss/mixins';
+@import './../../scss/vars';
+
+
+.button {
+    width: 150px;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 15px/50%;
+    background-color: $bg-btn;
+    color: $color-btn;
+    text-transform: uppercase;
+    border: 1px solid $border-color;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 4;
+
+    &:hover {
+        background: rgb(165, 3, 3);
+        text-decoration: none;
+        color: currentColor;
+    }
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+        background: rgb(165, 3, 3);
+    }
+}

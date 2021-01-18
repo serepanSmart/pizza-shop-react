@@ -1,0 +1,81 @@
+@import './../../scss/vars';
+
+.main {
+    position: relative;
+    background: grey url(https://storage.needpix.com/rsynced_images/pizza-1507444875nkl.jpg) center/cover;
+}
+
+.container {
+    font-family: $font-base;
+
+    .search__option {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            width: 45%;
+        }
+
+        input,
+        select {
+            width: 100%;
+        }
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pizza__item-wrapper {
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .pizza__item {
+        position: relative;
+        padding: 10px;
+        border: 1px solid red;
+        border-radius: 10px;
+        text-align: center;
+        color: $color-btn;
+        background: linear-gradient(45deg, rgb(110, 8, 8), rgb(8, 8, 226));
+        transition: 0.3s;
+        cursor: pointer;
+
+        .modal {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 70%;
+            height: 70%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            color: $color-btn;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            ;
+        }
+
+        img {
+            width: 70%;
+            border-radius: 50%;
+        }
+
+        h3 {
+            color: gold;
+        }
+
+        h5 {
+            color: rgb(185, 113, 4);
+            font-style: italic;
+        }
+    }
+}

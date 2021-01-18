@@ -1,0 +1,49 @@
+.create__pizza {
+    min-height: 100vh;
+    padding-top: 15px;
+    background: grey url(http://pomodoropizza.co.za/wp-content/uploads/pizza-background.jpg) center/cover no-repeat;
+    color: $color-btn;
+
+    .container {
+        background: rgba(0, 0, 0, 0.741);
+        padding: 30px;
+        text-align: center;
+    }
+
+    .inputs {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        @include screen (md) {
+            flex-direction: row;
+        }
+
+        input {
+            max-width: 95%;
+        }
+
+        label {
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(228, 45, 8, 0.857);
+            }
+        }
+
+
+
+        &__img {
+
+            width: 225px;
+            height: 225px;
+
+            img {
+                max-width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+}

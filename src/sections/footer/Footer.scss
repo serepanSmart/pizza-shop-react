@@ -1,0 +1,61 @@
+@import './../../scss/mixins';
+@import './../../scss/vars';
+
+
+.footer {
+    font-family: $font-base;
+    background: linear-gradient(45deg, #000, rgb(53, 22, 22));
+    color: $color-btn;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+
+        @include screen(md) {
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        background: rgba(255, 217, 0, 0.584);
+        box-shadow: 0 0 2px 2px $color-btn;
+        cursor: pointer;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    a {
+        margin-bottom: 10px;
+        color: $color-btn;
+        display: block;
+
+        &:hover {
+            color: rgb(182, 7, 7);
+        }
+    }
+
+    &__follow-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-size: 20px;
+        }
+    }
+}
